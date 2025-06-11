@@ -29,18 +29,18 @@ npm -v
 
 ***Para clonar el repositorio es necesario tener Git instalado (si ya lo tienes instalado puedes brincarte esta parte):
 
-# ✅ 1. Instalar Git
+### ✅ 1. Instalar Git
 
-🔹 Windows
-    1. Ve a: https://git-scm.com
+🔹 Windows:
+    Ve a: https://git-scm.com
 
-    2. Haz clic en Download for Windows.
+    Haz clic en Download for Windows.
 
-    3. Ejecuta el instalador y deja la configuración por defecto (usa Git Bash como terminal).
+    Ejecuta el instalador y deja la configuración por defecto (usa Git Bash como terminal).
 
-    4. Una vez instalado, abre Git Bash o CMD/PowerShell.
+    Una vez instalado, abre Git Bash o CMD/PowerShell.
 
-🔹 macOS
+🔹 macOS:
     Puedes instalar Git de varias formas:
     
     Opción 1: Instalar Xcode Command Line Tools (más fácil):
@@ -59,7 +59,7 @@ sudo apt update
 sudo apt install git
 ```
 
-# ✅ 2. Verificar que Git está instalado
+### ✅ 2. Verificar que Git está instalado
 
 Abre una terminal y ejecuta:
 ```bash
@@ -71,7 +71,7 @@ git version 2.42.0
 ```
 Entonces ya tienes Git instalado correctamente.
 
-# ✅ 3. Configurar tu nombre y correo
+### ✅ 3. Configurar tu nombre y correo
 Antes de usar Git, configura tu identidad (esto aparecerá en los commits):
 ```bash
 git config --global user.name "Tu Nombre"
