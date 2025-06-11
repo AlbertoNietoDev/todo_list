@@ -32,32 +32,28 @@ npm -v
 ### ✅ 1. Instalar Git
 
 Windows:
-    Ve a: https://git-scm.com .
+🔹 Ve a: https://git-scm.com .
 
-    Haz clic en Download for Windows.
+🔹 Haz clic en Download for Windows.
 
-    Ejecuta el instalador y deja la configuración por defecto (usa Git Bash como terminal).
+🔹 Ejecuta el instalador y deja la configuración por defecto (usa Git Bash como terminal).
 
-    Una vez instalado, abre Git Bash o CMD/PowerShell.
+🔹 Una vez instalado, abre Git Bash o CMD/PowerShell.
 
 macOS:
-    Puedes instalar Git de varias formas:
-    
-    ```markdown
-    Opción 1: Instalar Xcode Command Line Tools (más fácil):
-    ```
+Puedes instalar Git de varias formas:
 
-    ```bash
-    xcode-select --install
-    ```
+Opción 1: Instalar Xcode Command Line Tools (más fácil):
 
-    ```markdown
-    Opción 2: Usar Homebrew (si lo tienes):
-    ```
+```bash
+xcode-select --install
+```
 
-    ```bash
-    brew install git
-    ```
+Opción 2: Usar Homebrew (si lo tienes):
+
+```bash
+brew install git
+```
 
 🔹 Linux (Debian, Ubuntu, etc.)
 
