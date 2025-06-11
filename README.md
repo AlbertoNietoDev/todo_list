@@ -43,17 +43,22 @@ npm -v
 🔹 macOS:
     Puedes instalar Git de varias formas:
     
+    ```markdown
     Opción 1: Instalar Xcode Command Line Tools (más fácil):
-```bash
-xcode-select --install
-```
 
+    ```bash
+    xcode-select --install
+    ```
+
+    ```markdown
     Opción 2: Usar Homebrew (si lo tienes):
-```bash
-brew install git
-```
+
+    ```bash
+    brew install git
+    ```
 
 🔹 Linux (Debian, Ubuntu, etc.)
+
 ```bash
 sudo apt update
 sudo apt install git
