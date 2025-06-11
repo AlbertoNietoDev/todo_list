@@ -1,70 +1,132 @@
-# Getting Started with Create React App
+# 🚀 Proyecto Full Stack TO DO LIST – Guía de Instalación y uso Paso a Paso
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto contiene un **frontend** y un **backend** que deben ejecutarse por separado. A continuación, se explican los pasos para que puedas correrlo correctamente en tu entorno local.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📋 Requisitos previos
 
-### `npm start`
+Antes de comenzar, asegúrate de tener instalado:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 🟦 **Git** → [https://git-scm.com](https://git-scm.com)
+- 🟩 **Node.js** (incluye npm) → [https://nodejs.org](https://nodejs.org)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🧩 1. Instalar Node.js
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+🔹 Ve al sitio oficial: [https://nodejs.org](https://nodejs.org)  
+🔹 Descarga la versión **LTS (Long-Term Support)**  
+🔹 Instala siguiendo las instrucciones del asistente
+🔹 Verifica en la terminal:
 
-### `npm run build`
+```bash
+node -v
+npm -v
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+***Para clonar el repositorio es necesario tener Git instalado (si ya lo tienes instalado puedes brincarte esta parte):
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# ✅ 1. Instalar Git
 
-### `npm run eject`
+🔹 Windows
+    1. Ve a: https://git-scm.com
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    2. Haz clic en Download for Windows.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    3. Ejecuta el instalador y deja la configuración por defecto (usa Git Bash como terminal).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    4. Una vez instalado, abre Git Bash o CMD/PowerShell.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+🔹 macOS
+    Puedes instalar Git de varias formas:
+    
+    Opción 1: Instalar Xcode Command Line Tools (más fácil):
+```bash
+xcode-select --install
+```
 
-## Learn More
+    Opción 2: Usar Homebrew (si lo tienes):
+```bash
+brew install git
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+🔹 Linux (Debian, Ubuntu, etc.)
+```bash
+sudo apt update
+sudo apt install git
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# ✅ 2. Verificar que Git está instalado
 
-### Code Splitting
+Abre una terminal y ejecuta:
+```bash
+git --version
+```
+✅ Si ves algo como:
+```bash
+git version 2.42.0
+```
+Entonces ya tienes Git instalado correctamente.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# ✅ 3. Configurar tu nombre y correo
+Antes de usar Git, configura tu identidad (esto aparecerá en los commits):
+```bash
+git config --global user.name "Tu Nombre"
+git config --global user.email "tu@email.com"
+```
+Para verificarlo:
+```bash
+git config --global --list
+```
+---
 
-### Analyzing the Bundle Size
+## 📦 2. Clonar el repositorio
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Usa Git para clonar el repositorio en tu máquina local:
+```bash
+git clone https://github.com/AlbertoNietoDev/todo_list.git
+```
+Luego entra en la carpeta del proyecto:
+```bash
+cd todo_list
+```
 
-### Making a Progressive Web App
+## 🔧 5. Correr el Backend
+Ve a la carpeta del backend:
+```bash
+cd backend
+```
+instala dependencias:
+```bash
+npm install
+```
+y ejecuta el servidor:
+```bash
+npm run dev
+```
+Esto iniciará el servidor backend, corriendo en el puerto 500 y te debe salir un mensaje en la consola como:
+```bash
+Server is running on http://localhost:5000
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🌐 6. Correr el Frontend
+En otra terminal, ve a la carpeta del frontend (si no estas en la carpeta "todo_list"):
+```bash
+cd todo_list
+```
+instala las dependencias:
+```bash
+npm install
+```
+y corre el proyecto:
+```bash 
+npm run start-front
+```
+debe aparecer un mensaje como este:
+```bash
+webpack compiled successfully
+```
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
